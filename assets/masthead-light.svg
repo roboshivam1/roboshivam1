@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="1200" height="280" role="img" aria-label="The Basement Gazette — GitHub Edition">
+  <rect x="0" y="0" width="1200" height="280" fill="#f7f4ec"/>
+
+  <!-- outer frame -->
+  <rect x="10" y="10" width="1180" height="260" fill="none" stroke="#14120e" stroke-width="2"/>
+  <rect x="18" y="18" width="1164" height="244" fill="none" stroke="#14120e" stroke-width="0.75"/>
+
+  <!-- top ears -->
+  <text x="44" y="58" font-family="Georgia, 'Times New Roman', serif" font-size="15" letter-spacing="2.5" fill="#14120e">VOL. XI &#183; NO. 001</text>
+  <text x="600" y="58" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" letter-spacing="2.5" fill="#14120e">EST. CLASS VIII &#183; JAIPUR, INDIA</text>
+  <text x="1156" y="58" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="15" letter-spacing="2.5" fill="#14120e">PRICE: ONE PULL REQUEST</text>
+
+  <line x1="44" y1="76" x2="1156" y2="76" stroke="#14120e" stroke-width="1"/>
+
+  <!-- nameplate -->
+  <text x="600" y="176" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="82" font-weight="bold" letter-spacing="1" fill="#14120e">The Basement Gazette</text>
+
+  <!-- double rule -->
+  <line x1="44" y1="204" x2="1156" y2="204" stroke="#14120e" stroke-width="3"/>
+  <line x1="44" y1="212" x2="1156" y2="212" stroke="#14120e" stroke-width="1"/>
+
+  <!-- bottom bar -->
+  <text x="44" y="243" font-family="Georgia, 'Times New Roman', serif" font-size="16" letter-spacing="4" font-weight="bold" fill="#14120e">GITHUB EDITION</text>
+  <text x="1156" y="243" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="16" letter-spacing="2" font-style="italic" fill="#14120e">All the news that fits, we ship.</text>
+</svg>
