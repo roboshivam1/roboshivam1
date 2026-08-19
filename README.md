@@ -71,13 +71,9 @@ Three verticals: science explainers, CS fundamentals, JEE Advanced solutions.
 ### SCHOOL CONTENT ENGINE
 <sub>WORKSHOP · *Teaching a machine how to make 'tasteful' school posters*</sub>
 
-It started with one blurry annual-day photo on a school's Instagram, shot from the third row, half a curtain in frame. Every school has that page. Nobody has the time to turn eighty photos of a sports day into something that looks like anyone cared. The photos exist; the care doesn't scale.
+It started with one blurry annual-day photo on a school's Instagram, shot from the third row, half a curtain in frame. Every school has that page. The photos exist; the care doesn't scale.
 
-The engine makes the care scale. Posters are written as HTML pages — real CSS, real fonts — then opened in an invisible browser, screenshotted at exactly 1080×1080, and saved as images. That's the whole trick, and it costs nothing. Anything a browser can do, the posters can do.
-
-Around that sit dumb configs (one file per school: colours, fonts, logo, tone) and dumb templates that know nothing about any particular school. The intelligence is the glue in between — a vision worker throwing out the blurry and the too-dark, a content worker writing captions and deciding what goes on which slide, a render worker stuffing it all into HTML and shooting every size the feed needs.
-
-Photos in one end, branded captioned carousels out the other.
+So the engine makes it scale. Posters are written as HTML — real CSS, real fonts — then opened in an invisible browser and screenshotted at exactly 1080×1080. Dumb configs, dumb templates, and three small workers doing all the judging in between.
 
 <sub>**[Read the full piece →](https://shvmkpr.in/workshop/school_content/)** · FILED UNDER: JINJA2 · LLM · PYTHON</sub>
 
@@ -93,6 +89,44 @@ Photos in one end, branded captioned carousels out the other.
 <sub>**NOTICES** — Hot Wheels catalogued, photographed, not for sale. Stop asking.</sub>
 
 <sub>**MISCELLANY** — The filament shelf has begun sorting itself by colour. Nobody here did this.</sub>
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+### CROSSWORD NO. 01
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/crossword-dark.svg">
+  <img alt="Crossword no. 01" src="assets/crossword-light.svg">
+</picture>
+
+**ACROSS**
+
+<sub>**2.** An AI that does more than chat (5)</sub>
+<sub>**4.** The currency of every LLM (5)</sub>
+<sub>**5.** An AI that listens instead of speaks (7)</sub>
+<sub>**7.** What every chatbot claims to have (6)</sub>
+<sub>**8.** Hidden beneath the model (6)</sub>
+
+**DOWN**
+
+<sub>**1.** Direction with magnitude (6)</sub>
+<sub>**3.** Google's AI family (6)</sub>
+<sub>**6.** Instructions for a very literal machine (6)</sub>
+
+</td>
+<td valign="top">
+
+### THE CARTOON
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cartoon-dark.svg">
+  <img alt="The cartoon" src="assets/cartoon-light.svg">
+</picture>
+
+<sub>*The printer has been left alone with itself again.*</sub>
 
 </td>
 </tr>
