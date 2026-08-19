@@ -11,11 +11,9 @@
 
 ### The last version? (Apparently not)
 
-<sub>*JAIPUR* — I have now written JARVIS three times. Each rewrite began with the belief that I finally understood what I was building, and each ended as proof that I had only understood the previous version.</sub>
+<sub>*JAIPUR* — I have written JARVIS three times. Each rewrite began believing I finally understood it, and ended proving I had only understood the one before.</sub>
 
-<sub>MK3 starts from zero. Always-on core, intermittent workers, a durable queue that survives me closing the laptop mid-job. Five subagents doing work their namesakes would not recognise.</sub>
-
-<sub>Phase 5 adds a notification policy and a `/quiet` command, because an assistant that never shuts up is just a smoke alarm with opinions.</sub>
+<sub>Phase 5 adds a `/quiet` command, on the grounds that an assistant which never shuts up is just a smoke alarm with opinions.</sub>
 
 </td>
 <td width="46%" valign="top">
@@ -24,15 +22,11 @@
 
 # CHALKDUST TEACHES ITSELF TO DRAW
 
-<sub>*A pipeline that turns a script into a narrated animation, and the one architectural bet holding it together*</sub>
-
 <sub>**BY SHIVAM** · STAFF ENGINEER, NIGHT EDITOR, ONLY EMPLOYEE</sub>
 
-The scrappy version worked exactly well enough to expose the problem: a model writing Manim code freehand produces animations that overlap, overflow and wander off-frame. The rebuild inverts it. The model no longer authors animation code — it **selects and parameterizes hand-written, layout-safe components** through a JSON spec that gets validated before anything renders.
+A model writing Manim code freehand produces animations that overlap and wander off-frame. So it no longer writes the code — it **selects and parameterizes hand-written, layout-safe components** through a validated spec. Audio is measured before anything renders, so every duration comes from real speech.
 
-Audio is generated first, so every duration in the timeline derives from measured speech rather than a guess. Content-addressed caching, parallel beat rendering, draft and final quality tiers, a bounded repair loop, and a human gate before publish.
-
-Three verticals: science explainers, CS fundamentals, JEE Advanced solutions.
+<sub>Science explainers · CS fundamentals · JEE Advanced</sub>
 
 </td>
 <td width="28%" valign="top">
@@ -42,19 +36,13 @@ Three verticals: science explainers, CS fundamentals, JEE Advanced solutions.
 | | |
 |:---|---:|
 | Workshop | 6 |
-| Motoring | 3 |
 | Lab Notes | 4 |
 | Classifieds | 5 |
 | Op-Ed | 1 |
 
 **THE CRITIC RECOMMENDS**
 
-<sub>THE WORKSHOP PLAYLIST</sub>
-
-**Rubberband Man**
-<sub>THE SPINNERS · 1977</sub>
-
-<sub>Peter Quill music is the best music.</sub>
+<sub>Rubberband Man — THE SPINNERS, 1977. Peter Quill music is the best music.</sub>
 
 <sub>*More at [shvmkpr.in](https://shvmkpr.in) →*</sub>
 
@@ -62,80 +50,61 @@ Three verticals: science explainers, CS fundamentals, JEE Advanced solutions.
 </tr>
 </table>
 
----
-
 <table>
 <tr>
 <td width="58%" valign="top">
 
 ### SCHOOL CONTENT ENGINE
-<sub>WORKSHOP · *Teaching a machine how to make 'tasteful' school posters*</sub>
+<sub>WORKSHOP · *Teaching a machine to make 'tasteful' school posters*</sub>
 
-It started with one blurry annual-day photo on a school's Instagram, shot from the third row, half a curtain in frame. Every school has that page. The photos exist; the care doesn't scale.
+It began with one blurry annual-day photo, shot from the third row, half a curtain in frame. Every school has that page. The photos exist; the care doesn't scale. So the engine scales it — posters written as HTML, opened in an invisible browser, screenshotted at 1080×1080.
 
-So the engine makes it scale. Posters are written as HTML — real CSS, real fonts — then opened in an invisible browser and screenshotted at exactly 1080×1080. Dumb configs, dumb templates, and three small workers doing all the judging in between.
-
-<sub>**[Read the full piece →](https://shvmkpr.in/workshop/school_content/)** · FILED UNDER: JINJA2 · LLM · PYTHON</sub>
+<sub>**[Read the full piece →](https://shvmkpr.in/workshop/school_content/)** · JINJA2 · LLM · PYTHON</sub>
 
 </td>
 <td width="42%" valign="top">
 
 ### CLASSIFIEDS
 
-<sub>**LOST** — One 2.5mm hex key. Last seen doing something important. No reward offered, only relief.</sub>
+<sub>**LOST** — One 2.5mm hex key. Last seen doing something important.</sub>
 
 <sub>**PERSONAL** — First-year CSE, LNMIIT Jaipur. Answers to Shivam.</sub>
 
-<sub>**NOTICES** — Hot Wheels catalogued, photographed, not for sale. Stop asking.</sub>
+<sub>**NOTICES** — Hot Wheels catalogued, photographed, not for sale.</sub>
 
 <sub>**MISCELLANY** — The filament shelf has begun sorting itself by colour. Nobody here did this.</sub>
 
 </td>
 </tr>
-<tr>
-<td valign="top">
+</table>
 
-### CROSSWORD NO. 01
+<table>
+<tr>
+<td width="34%" valign="top">
+
+<sub>**CROSSWORD NO. 01**</sub>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/crossword-dark.svg">
-  <img alt="Crossword no. 01" src="assets/crossword-light.svg">
+  <img alt="Crossword no. 01" src="assets/crossword-light.svg" width="250">
 </picture>
 
-**ACROSS**
-
-<sub>**2.** An AI that does more than chat (5)</sub>
-<sub>**4.** The currency of every LLM (5)</sub>
-<sub>**5.** An AI that listens instead of speaks (7)</sub>
-<sub>**7.** What every chatbot claims to have (6)</sub>
-<sub>**8.** Hidden beneath the model (6)</sub>
-
-**DOWN**
-
-<sub>**1.** Direction with magnitude (6)</sub>
-<sub>**3.** Google's AI family (6)</sub>
-<sub>**6.** Instructions for a very literal machine (6)</sub>
-
 </td>
-<td valign="top">
+<td width="66%" valign="top">
 
-### THE CARTOON
+<sub>**THE CARTOON**</sub>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cartoon-dark.svg">
-  <img alt="The cartoon" src="assets/cartoon-light.svg">
+  <img alt="The cartoon" src="assets/cartoon-light.svg" width="150">
 </picture>
 
-<sub>*The printer has been left alone with itself again.*</sub>
+<sub>**ACROSS** — **2.** An AI that does more than chat (5) · **4.** The currency of every LLM (5) · **5.** An AI that listens instead of speaks (7) · **7.** What every chatbot claims to have (6) · **8.** Hidden beneath the model (6)</sub>
+
+<sub>**DOWN** — **1.** Direction with magnitude (6) · **3.** Google's AI family (6) · **6.** Instructions for a very literal machine (6)</sub>
 
 </td>
 </tr>
 </table>
 
----
-
-### EDITOR'S NOTE
-
-One reporter, no fact-checker, which is how it goes to press on time. Everything above is real and unfinished in the specific way real things are. Corrections and tips: open an issue — it is the closest thing this paper has to a letters page.
-
-<p align="center"><sub>THE BASEMENT GAZETTE · PRINTED NIGHTLY · NO REFUNDS · <a href="https://shvmkpr.in">shvmkpr.in</a></sub></p>
+<sub>THE BASEMENT GAZETTE · PRINTED NIGHTLY · NO REFUNDS · [shvmkpr.in](https://shvmkpr.in)</sub>
