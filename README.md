@@ -3,107 +3,106 @@
   <img alt="The Basement Gazette — GitHub Edition" src="assets/masthead-light.svg" width="100%">
 </picture>
 
-<p align="center">
-  <sub><i>Written, printed and distributed from a bedroom in Jaipur &#183; <a href="https://shvmkpr.in">shvmkpr.in</a></i></sub>
-</p>
+<table>
+<tr>
+<td width="26%" valign="top">
 
----
+**COLUMN ONE**
 
-## JARVIS ENTERS PHASE FIVE; NOTIFICATIONS TO BE POLICED
+### The last version? (Apparently not)
 
-<sub>**By SHIVAM KAPOOR** &#183; Staff Engineer, Night Editor, Only Employee</sub>
+<sub>*JAIPUR* — I have now written JARVIS three times. Each rewrite began with the belief that I finally understood what I was building, and each ended as proof that I had only understood the previous version.</sub>
 
-Seven years after its first incarnation — a single Python file, a stack of `if` statements and `pyttsx3` mispronouncing my name — the assistant is on its third full rewrite. MK3 runs as an always-on core with intermittent workers, a durable job queue, and five subagents named after Greek figures who would be horrified by what they're being asked to do. Phase 5 adds a notification policy, watchers, and a `/quiet` command, on the theory that an assistant that never shuts up is just a smoke alarm with opinions.
+<sub>MK3 starts from zero. Always-on core, intermittent workers, a durable queue that survives me closing the laptop mid-job. Five subagents doing work their namesakes would not recognise.</sub>
+
+<sub>Phase 5 adds a notification policy and a `/quiet` command, because an assistant that never shuts up is just a smoke alarm with opinions.</sub>
+
+</td>
+<td width="46%" valign="top">
+
+**LEAD STORY · SOFTWARE**
+
+# CHALKDUST TEACHES ITSELF TO DRAW
+
+<sub>*A pipeline that turns a script into a narrated animation, and the one architectural bet holding it together*</sub>
+
+<sub>**BY SHIVAM** · STAFF ENGINEER, NIGHT EDITOR, ONLY EMPLOYEE</sub>
+
+The scrappy version worked exactly well enough to expose the problem: a model writing Manim code freehand produces animations that overlap, overflow and wander off-frame. The rebuild inverts it. The model no longer authors animation code — it **selects and parameterizes hand-written, layout-safe components** through a JSON spec that gets validated before anything renders.
+
+Audio is generated first, so every duration in the timeline derives from measured speech rather than a guess. Content-addressed caching, parallel beat rendering, draft and final quality tiers, a bounded repair loop, and a human gate before publish.
+
+Three verticals: science explainers, CS fundamentals, JEE Advanced solutions.
+
+</td>
+<td width="28%" valign="top">
+
+**INSIDE TODAY**
+
+| | |
+|:---|---:|
+| Workshop | 6 |
+| Motoring | 3 |
+| Lab Notes | 4 |
+| Classifieds | 5 |
+| Op-Ed | 1 |
+
+**THE CRITIC RECOMMENDS**
+
+<sub>THE WORKSHOP PLAYLIST</sub>
+
+**Rubberband Man**
+<sub>THE SPINNERS · 1977</sub>
+
+<sub>Peter Quill music is the best music.</sub>
+
+<sub>*More at [shvmkpr.in](https://shvmkpr.in) →*</sub>
+
+</td>
+</tr>
+</table>
 
 ---
 
 <table>
 <tr>
-<td width="50%" valign="top">
-
-### CHALKDUST TEACHES ITSELF TO DRAW
-<sub>SCIENCE DESK</sub>
-
-An automated video pipeline: script goes in, a narrated Manim animation comes out. The bet is that the model should *select and parameterize* hand-written scene components through a validated spec, not author animation code freehand. Audio is generated first so every timing derives from something real. Verticals: science explainers, CS fundamentals, JEE Advanced solutions.
-
-</td>
 <td width="50%" valign="top">
 
 ### PATENT FILED ON AIR PURIFIER
-<sub>HEALTH & INDUSTRY</sub>
+<sub>WORKSHOP</sub>
 
-**SqOnion** — a wall-mounted purifier built around a 540&#215;540mm chassis, a central fan hub, four filter tracks and an ESP32 sensor stack. Provisional application on file with the Indian Patent Office. Prototyping moved from hand-cut MDF to FDM printing the moment a printer entered the building, which tells you everything about hand-cut MDF.
+**SqOnion** — wall-mounted, 540×540mm chassis, central fan hub, four filter tracks a side, ESP32 sensor stack. Provisional application on file with the Indian Patent Office. Prototyping moved off hand-cut MDF the day a printer entered the building, which tells you everything about hand-cut MDF.
+
+</td>
+<td width="50%" valign="top">
+
+### MOTORCYCLE GETS REMOVABLE FACE
+<sub>MOTORING</sub>
+
+One salvaged Pulsar NS200 frame, several interchangeable printed body sets — scrambler, café racer, sports. Scrambler first. Bodywork and ESP32 auxiliaries now; motor and battery when the budget recovers. Build logs run in the print edition.
 
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-
-### MOTORCYCLE ACQUIRES REMOVABLE PERSONALITY
-<sub>MOTORING</sub>
-
-One salvaged Pulsar NS200 frame, several interchangeable 3D-printed body sets — scrambler, café racer, sports. Scrambler first. Bodywork and ESP32 auxiliary electronics now; motor and battery when the budget recovers. Build logs run in the print edition.
-
-</td>
 <td width="50%" valign="top">
 
 ### SCHOOL RUNS ON CUSTOM SOFTWARE
-<sub>CIVIC AFFAIRS</sub>
+<sub>LAB NOTES</sub>
 
-Advising **Malviya Convent School** on a modular platform: FastAPI, Postgres, Redis, school-owned box. Hard architectural rule — modules talk to the core over REST and an event bus, never straight into the database. The long version of this idea is called Vidyut.
+Advising **Malviya Convent School** on a modular platform — FastAPI, Postgres, Redis, a box they own. One hard rule: modules talk to the core over REST and an event bus, never straight into the database. The unabridged version of this idea is called Vidyut.
 
 </td>
-</tr>
-</table>
-
----
-
-## MARKET REPORT
-
-<sub>CLOSING POSITIONS, BASEMENT EXCHANGE</sub>
-
-| LISTING | SYM | SECTOR | STATUS | MOVE |
-|:---|:---|:---|:---|:---|
-| Jarvis MK3 | JVS | Assistants | Phase 5 in progress | ▲ |
-| Chalkdust | CHLK | Media | Rebuild underway | ▲ |
-| SqOnion | SQON | Hardware | Patent filed | ▲ |
-| Basement Supply Co | BSCO | Retail | Pre-launch | ▬ |
-| Ebike | EBIK | Motoring | Bodywork phase | ▲ |
-| Sleep | ZZZ | Commodities | Illiquid | ▼ |
-
----
-
-<table>
-<tr>
-<td width="55%" valign="top">
+<td width="50%" valign="top">
 
 ### CLASSIFIEDS
 
-**FOR SALE** — Desk objects for people whose desks are also workbenches. *The Basement Supply Co*, opening shortly.
+<sub>**WANTED** — First hackathon. Never been to one. Bringing a soldering iron regardless.</sub>
 
-**WANTED** — First hackathon. Have never attended one. Will bring a soldering iron regardless.
+<sub>**FOR SALE** — Desk objects for people whose desks are also workbenches. *The Basement Supply Co*, opening shortly.</sub>
 
-**PERSONAL** — First-year CSE, LNMIIT Jaipur. Answers to Shivam.
+<sub>**PERSONAL** — First-year CSE, LNMIIT Jaipur. Answers to Shivam.</sub>
 
-**COLLECTIONS** — Hot Wheels, catalogued and photographed. Not for sale. Stop asking.
-
-**NOTICES** — Currently reading: DBMS, Chapter 1. The UNIVERSITY schema and I are on first-name terms.
-
-</td>
-<td width="45%" valign="top">
-
-### WORKSHOP CONDITIONS
-
-```
-PRINTER ......... Bambu Lab P1S + AMS
-FILAMENT ........ PLA, ASA-CF
-BOARDS .......... ESP32, WS2812B
-CAD ............. Fusion 360
-LANGUAGE ........ Python 3.12
-EDITOR'S DESK ... unreasonably full
-FORECAST ........ scattered commits,
-                  chance of refactor
-```
+<sub>**NOTICES** — Hot Wheels catalogued, photographed, not for sale.</sub>
 
 </td>
 </tr>
@@ -111,12 +110,10 @@ FORECAST ........ scattered commits,
 
 ---
 
-## CIRCULATION FIGURES
-
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&hide_border=false&bg_color=0b0a08&title_color=ffb000&text_color=c98a1a&icon_color=ffb000&border_color=ffb000">
-    <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&hide_border=false&bg_color=f7f4ec&title_color=14120e&text_color=14120e&icon_color=14120e&border_color=14120e" alt="Circulation figures">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=roboshivam1&show_icons=true&hide_title=true&hide_border=true&bg_color=1b1c1e&text_color=e7e1cb&icon_color=d6786e">
+    <img src="https://github-readme-stats.vercel.app/api?username=roboshivam1&show_icons=true&hide_title=true&hide_border=true&bg_color=d8d4ca&text_color=16161a&icon_color=9d262f" alt="Circulation figures">
   </picture>
 </p>
 
@@ -124,10 +121,6 @@ FORECAST ........ scattered commits,
 
 ### EDITOR'S NOTE
 
-This paper has one reporter and no fact-checker, which is how it goes to press on time. The projects above are real, unfinished in the specific way that real projects are, and documented as they happen rather than after they succeed. If you want the long-form version — build logs, failures, the Hot Wheels — the print edition lives at **[shvmkpr.in](https://shvmkpr.in)**.
+One reporter, no fact-checker, which is how it goes to press on time. Everything above is real and unfinished in the specific way real things are. Corrections and tips: open an issue — it is the closest thing this paper has to a letters page.
 
-Corrections, tips and job offers: open an issue. It is the closest thing this paper has to a letters page.
-
-<p align="center">
-  <sub>THE BASEMENT GAZETTE &#183; PRINTED NIGHTLY &#183; NO REFUNDS</sub>
-</p>
+<p align="center"><sub>THE BASEMENT GAZETTE · PRINTED NIGHTLY · NO REFUNDS · <a href="https://shvmkpr.in">shvmkpr.in</a></sub></p>
