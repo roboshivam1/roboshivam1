@@ -1,0 +1,42 @@
+name: Press run
+
+# The dateline is baked into the SVG, so the paper has to be reprinted.
+on:
+  schedule:
+    - cron: "30 22 * * *"   # 04:00 IST
+  workflow_dispatch:
+  push:
+    paths:
+      - "tools/build_masthead.py"
+      - ".github/workflows/press-run.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Cache the fonts
+        uses: actions/cache@v4
+        with:
+          path: fonts
+          key: gazette-fonts-v1
+
+      - run: pip install fonttools
+
+      - run: python tools/build_masthead.py
+
+      - name: Commit if the edition changed
+        run: |
+          git config user.name  "The Basement Gazette"
+          git config user.email "press@shvmkpr.in"
+          git add assets/masthead-*.svg
+          git diff --staged --quiet || git commit -m "press run: $(date -u +'%d %b %Y')"
+          git push
