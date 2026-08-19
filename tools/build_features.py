@@ -29,7 +29,7 @@ PUZZLE = ROOT / "content" / "puzzle.yaml"
 ITALIC = ("ss-italic.ttf",
           "ofl/sourceserif4/SourceSerif4-Italic%5Bopsz,wght%5D.ttf")
 
-CELL = 34
+CELL = 23
 PAD = 5
 
 CAPTION = "Do not encourage it."
@@ -61,7 +61,7 @@ def crossword(theme_name, data):
         o.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" '
                  f'fill="{cell_fill}" stroke="{t["ink"]}" stroke-width="1"/>')
         if "n" in c:
-            o.append(num.path(str(c["n"]), 10, x + 4, y + 13, t["ink"], opacity=0.75))
+            o.append(num.path(str(c["n"]), 8, x + 3, y + 10, t["ink"], opacity=0.75))
     # NB: c["a"] holds the answer letter — deliberately not drawn.
     return wrap("".join(o), w, h, t["bg"], f'Crossword no. {data["number"]:02d}')
 
@@ -141,9 +141,15 @@ def main():
     OUT.mkdir(exist_ok=True)
     for name in THEMES:
         (OUT / f"crossword-{name}.svg").write_text(crossword(name, data))
-        (OUT / f"cartoon-{name}.svg").write_text(cartoon(name))
     print(f"crossword no. {data['number']:02d} — {data['cols']}x{data['rows']}, "
           f"{len(data['across'])} across, {len(data['down'])} down")
+
+    # The cartoon is hand-drawn and lives in assets/. Rendering the placeholder
+    # would overwrite it, so it only happens when explicitly asked for.
+    if "--cartoon" in sys.argv:
+        for name in THEMES:
+            (OUT / f"cartoon-{name}.svg").write_text(cartoon(name))
+        print("cartoon redrawn (placeholder)")
 
     # clue list, ready to paste into the README
     print("\n--- clues ---")
