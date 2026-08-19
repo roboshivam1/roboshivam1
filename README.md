@@ -80,28 +80,37 @@ It began with one blurry annual-day photo, shot from the third row, half a curta
 
 <table>
 <tr>
-<td width="34%" valign="top">
+<td width="33%" valign="top">
 
 <sub>**CROSSWORD NO. 01**</sub>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/crossword-dark.svg">
-  <img alt="Crossword no. 01" src="assets/crossword-light.svg" width="250">
+  <img alt="Crossword no. 01" src="assets/crossword-light.svg" width="245">
 </picture>
 
 </td>
-<td width="66%" valign="top">
+<td width="33%" valign="top">
+
+<sub>**ACROSS**</sub>
+
+<sub>**2.** An AI that does more than chat (5)<br>**4.** The currency of every LLM (5)<br>**5.** An AI that listens instead of speaks (7)<br>**7.** What every chatbot claims to have (6)<br>**8.** Hidden beneath the model (6)</sub>
+
+<sub>**DOWN**</sub>
+
+<sub>**1.** Direction with magnitude (6)<br>**3.** Google's AI family (6)<br>**6.** Instructions for a very literal machine (6)</sub>
+
+</td>
+<td width="34%" valign="top">
 
 <sub>**THE CARTOON**</sub>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cartoon-dark.svg">
-  <img alt="The cartoon" src="assets/cartoon-light.svg" width="150">
+  <img alt="The cartoon" src="assets/cartoon-light.svg" width="215">
 </picture>
 
-<sub>**ACROSS** — **2.** An AI that does more than chat (5) · **4.** The currency of every LLM (5) · **5.** An AI that listens instead of speaks (7) · **7.** What every chatbot claims to have (6) · **8.** Hidden beneath the model (6)</sub>
-
-<sub>**DOWN** — **1.** Direction with magnitude (6) · **3.** Google's AI family (6) · **6.** Instructions for a very literal machine (6)</sub>
+<sub>*The artist works in layers now.*</sub>
 
 </td>
 </tr>
