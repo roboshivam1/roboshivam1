@@ -66,56 +66,37 @@ Three verticals: science explainers, CS fundamentals, JEE Advanced solutions.
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="58%" valign="top">
 
-### PATENT FILED ON AIR PURIFIER
-<sub>WORKSHOP</sub>
+### SCHOOL CONTENT ENGINE
+<sub>WORKSHOP · *Teaching a machine how to make 'tasteful' school posters*</sub>
 
-**SqOnion** — wall-mounted, 540×540mm chassis, central fan hub, four filter tracks a side, ESP32 sensor stack. Provisional application on file with the Indian Patent Office. Prototyping moved off hand-cut MDF the day a printer entered the building, which tells you everything about hand-cut MDF.
+It started with one blurry annual-day photo on a school's Instagram, shot from the third row, half a curtain in frame. Every school has that page. Nobody has the time to turn eighty photos of a sports day into something that looks like anyone cared. The photos exist; the care doesn't scale.
 
-</td>
-<td width="50%" valign="top">
+The engine makes the care scale. Posters are written as HTML pages — real CSS, real fonts — then opened in an invisible browser, screenshotted at exactly 1080×1080, and saved as images. That's the whole trick, and it costs nothing. Anything a browser can do, the posters can do.
 
-### MOTORCYCLE GETS REMOVABLE FACE
-<sub>MOTORING</sub>
+Around that sit dumb configs (one file per school: colours, fonts, logo, tone) and dumb templates that know nothing about any particular school. The intelligence is the glue in between — a vision worker throwing out the blurry and the too-dark, a content worker writing captions and deciding what goes on which slide, a render worker stuffing it all into HTML and shooting every size the feed needs.
 
-One salvaged Pulsar NS200 frame, several interchangeable printed body sets — scrambler, café racer, sports. Scrambler first. Bodywork and ESP32 auxiliaries now; motor and battery when the budget recovers. Build logs run in the print edition.
+Photos in one end, branded captioned carousels out the other.
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### SCHOOL RUNS ON CUSTOM SOFTWARE
-<sub>LAB NOTES</sub>
-
-Advising **Malviya Convent School** on a modular platform — FastAPI, Postgres, Redis, a box they own. One hard rule: modules talk to the core over REST and an event bus, never straight into the database. The unabridged version of this idea is called Vidyut.
+<sub>**[Read the full piece →](https://shvmkpr.in/workshop/school_content/)** · FILED UNDER: JINJA2 · LLM · PYTHON</sub>
 
 </td>
-<td width="50%" valign="top">
+<td width="42%" valign="top">
 
 ### CLASSIFIEDS
 
-<sub>**WANTED** — First hackathon. Never been to one. Bringing a soldering iron regardless.</sub>
-
-<sub>**FOR SALE** — Desk objects for people whose desks are also workbenches. *The Basement Supply Co*, opening shortly.</sub>
+<sub>**LOST** — One 2.5mm hex key. Last seen doing something important. No reward offered, only relief.</sub>
 
 <sub>**PERSONAL** — First-year CSE, LNMIIT Jaipur. Answers to Shivam.</sub>
 
-<sub>**NOTICES** — Hot Wheels catalogued, photographed, not for sale.</sub>
+<sub>**NOTICES** — Hot Wheels catalogued, photographed, not for sale. Stop asking.</sub>
+
+<sub>**MISCELLANY** — The filament shelf has begun sorting itself by colour. Nobody here did this.</sub>
 
 </td>
 </tr>
 </table>
-
----
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=roboshivam1&show_icons=true&hide_title=true&hide_border=true&bg_color=1b1c1e&text_color=e7e1cb&icon_color=d6786e">
-    <img src="https://github-readme-stats.vercel.app/api?username=roboshivam1&show_icons=true&hide_title=true&hide_border=true&bg_color=d8d4ca&text_color=16161a&icon_color=9d262f" alt="Circulation figures">
-  </picture>
-</p>
 
 ---
 
